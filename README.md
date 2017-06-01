@@ -1,5 +1,5 @@
 # Gtube
-This is the training code for the Angular Training  held in Milano by Glue Labs in May 2017
+This is the code live developed during the Glue Labs, Instructor Lead Angular Training held in Milano in May 2017
 http://glue-labs.com
 
 ## Starting Up
