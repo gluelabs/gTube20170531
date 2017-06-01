@@ -1,7 +1,7 @@
 # Gtube
 This is the training code for the Angular Training  held in Milano by Glue Labs in May 2017
 
-##Starting Up
+## Starting Up
 
 To install dependencies run `npm i` or `yarn install`
 
