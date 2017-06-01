@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  API_KEY:"AIzaSyBSnGWkvGIBpXONyAKv5Gt3OofBv0IaHkw",
+  API_KEY:"PUT_YOUR__YOUTUBE_API_KEY",
   YT_BASE:"https://www.googleapis.com/youtube/v3"
 };
