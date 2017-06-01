@@ -1,0 +1,90 @@
+<h3> Template driven form </h3>
+
+
+<form (ngSubmit)="onFormSubmit(f)" #f="ngForm" novalidate>
+
+  <div class="form-group">
+    <label> Email </label>
+    
+    <input 
+    type="email" 
+    class="form-control" 
+    id="email" 
+    name="email" 
+    [(ngModel)]="user.email" 
+    #emailInput="ngModel" 
+    required
+    minlength="2"
+    maxlength="19"
+    pattern='^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))'
+    
+    >
+
+
+
+
+
+
+
+
+
+
+    <span 
+    class="help-block text-error" 
+    *ngIf="emailInput.invalid && emailInput.dirty">
+    Invalid email </span> 
+
+
+
+
+
+
+
+
+
+  </div>
+  <div class="form-group">
+    <label> Username </label>
+    <input type="text" 
+    class="form-control" 
+    minlength="8" 
+    id="username" 
+    name="username" 
+    [(ngModel)]="user.username" 
+    required>
+  </div>
+  <div class="form-group">
+    <label> Password </label>
+    <input type="password" class="form-control" minlength="8" id="password" name="password" [(ngModel)]="user.password" required>
+  </div>
+
+
+
+<div class="form-group" >
+    <label> Città </label>
+    <select name="city" [(ngModel)]="user.city" required>
+      <option
+      *ngFor="let c of cities"
+      [value]="c.id"
+      >{{c.name}}</option>
+
+    </select>
+   
+
+  </div>
+
+
+  <button 
+  type="submit" 
+  class="btn btn-primary" 
+  [disabled]="!f.valid">
+                Salva
+            </button>
+</form>
+
+<pre>{{f.valid | json}}</pre>
+
+    <pre>{{user | json}}</pre>
+
+
+<hr>

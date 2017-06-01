@@ -1,0 +1,9 @@
+<h2>{{video.title}}</h2>
+<img (click)="goToVideo()" [src]="video.thumbnailUrl" alt="videoImmagine" />
+<p>{{video.description | truncate:100:true}}</p>
+
+<pre>{{video.statistics | json}}</pre>
+<app-watch-later (wathcLater)="watchLaterListener()"></app-watch-later>
+<app-like (like)="likeListenr()">Like!!!</app-like>
+
+

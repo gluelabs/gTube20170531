@@ -1,0 +1,8 @@
+img{
+    max-width: 100%;
+    cursor: pointer;
+}
+h2{
+    max-height: 30px;
+    overflow: hidden;
+}

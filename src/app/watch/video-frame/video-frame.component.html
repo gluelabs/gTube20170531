@@ -1,0 +1,5 @@
+<h3>{{video?.title}}</h3>
+
+<iframe *ngIf="safeUrl" width="560" height="315" [src]="safeUrl" frameborder="0" allowfullscreen></iframe>
+<p>{{video?.description}}</p>
+<!--pre>{{video?.statistics | json}}</pre-->

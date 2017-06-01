@@ -1,0 +1,7 @@
+ #Glue Tube Navbar Bar Component
+
+<a routerLink="/home" routerLinkActive="selezionato">Home</a> -
+<a routerLink="/esercizi" routerLinkActive="selezionato">Esercizi</a> -
+<a routerLink="/credits" routerLinkActive="selezionato">Crediti</a>
+<button type="button" *showIfLogged="'ADMIN'" class="btn btn-danger pull-right" (click)="doLogout()">Logout</button>
+<pre>{{user | json}}</pre>

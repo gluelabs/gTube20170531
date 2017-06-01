@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let v of related?.items" (click)="watchVideo(v.id)">
+    <h4>{{v.title}}</h4>
+    <img [src]="v.thumbnailUrl" />
+  </li>
+
+</ul>

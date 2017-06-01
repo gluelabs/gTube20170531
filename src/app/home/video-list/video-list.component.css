@@ -1,0 +1,6 @@
+app-video-item{
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 33%;
+}
